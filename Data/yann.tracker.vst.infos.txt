@@ -1,0 +1,50 @@
+== Sweep
+Part d'une fréquence donnée et qui s'arrête sur la note
+avec comme commande :
+- le premier nombre fréquence de départ (de 20 à 20000 Hz par exemple)
+- et le deuxième temps du sweep (de 0 à 500 ms par exemple)
+
+== Vibrato
+- premier nombre = amplitude de la modulation à +/- 2 octaves (-24..+24)
+- deuxième nombre = fréquence de la modulation de 0.1Hz à 100Hz
+                    (un multiple de la fréquence de la note originale,
+                     et en plus si possible la moitié de cette fréquence)
+
+== Chord
+une commande chord
+chacun des nombres = nb de demi-tons à ajouter, comme dans lsdj
+ou alors : premier nombre = deuxième note, et deuxième nombre = vitesse de l'arpège
+ -> par le tracker/séquenceur
+
+== Pitch Bend
+modification de la fréquence entre -1 et +1 ton (-2 et +2 midi notes)
+de la note actuellement jouée !
+
+== Min/Max
+attack(1, 255)
+decay(1, 255)
+sustain(0, 127)
+release(1, 255)
+sweeptime(1, 255)
+sweepfreq(-127, 127) (en midinotes)
+
+== Interface
+Settings
+  Volume(0,127)
+  Panning(0,128)
+  Sweep
+    Time(0,255)
+    Start(-127,127)
+Envelope
+  Attack(1,255)
+  Decay(1,255)
+  Sustain(0,127)
+  Release(1,255)
+System
+  File
+  Record
+  Import (instruments)
+  Export (instruments)
+  Author
+  Name
+  Style
